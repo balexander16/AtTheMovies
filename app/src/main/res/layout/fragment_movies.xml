@@ -26,9 +26,28 @@
     android:ems="10"
     android:hint="Movie Title"
     android:inputType="textPersonName"
-    app:layout_constraintBottom_toTopOf="@+id/new_movie_button"
+    app:layout_constraintBottom_toTopOf="@+id/new_movie_screenwriter"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/new_movie_screenwriter"
+    android:hint="Screenwriter"
+    app:layout_constraintBottom_toTopOf="@id/new_movie_genre"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/new_movie_genre"
+    app:layout_constraintBottom_toTopOf="@id/new_movie_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+
   <ListView
     android:id="@+id/movies_list"
     android:layout_width="match_parent"
