@@ -1,12 +1,15 @@
 package edu.cnm.deepdive.atthemovies.model;
 
 import androidx.annotation.NonNull;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Movie {
+public class Movie implements Serializable {
 
-  private static Long last_id = 0L;
+  private static final long serialVersionUID = 1L;
+
+  public static Long last_id = 0L;
 
   private Long id;
 
