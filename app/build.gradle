@@ -30,6 +30,7 @@ dependencies {
     // For Kotlin use navigation-fragment-ktx
     implementation "androidx.navigation:navigation-ui:$nav_version"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
