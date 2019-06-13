@@ -29,9 +29,17 @@ public class Movie implements Serializable {
     id = ++last_id;
   }
 
+  public Movie(Long id) {
+      if(last_id < id){
+        last_id = id;
+      }
+      this.id = id;
+  }
+
   public Long getId() {
     return id;
   }
+
 
   public String getTitle() {
     return title;

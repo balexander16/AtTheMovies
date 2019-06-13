@@ -24,10 +24,4 @@ public class MainActivity extends AppCompatActivity {
 
   }
 
-  @Override
-  protected void onStop() {
-    super.onStop();
-    MoviesViewModel viewModel = ViewModelProviders.of(this).get(MoviesViewModel.class);
-    viewModel.saveData(this);
-  }
 }
